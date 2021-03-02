@@ -8,10 +8,10 @@
    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
    <!-- ==/> Preload fonts Start! </==-->
-   <link rel="preload" href="fonts/Motserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-   <link rel="preload" href="fonts/Motserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
-   <link rel="preload" href="fonts/Motserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-   <link rel="preload" href="fonts/Motserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
    <!-- ==/> Preload fonts End! </==-->
    <title>Читать Весело</title>
    <link rel="stylesheet" href="css/vendor.css">
@@ -20,77 +20,7 @@
 
 <body>
    <div class="site-container">
-      <header class="header">
-   <div class="container">
-      <div class="header-top header-component">
-         <span class="header-top__location" aria-label="Твой город">
-            Москва
-         </span>
-         <nav class="header-top__nav menu for-desktop">
-            <ul class="header-top__list menu-list">
-               <li class="header-top__item menu-list__item">
-                  <a href="#" class="header-top__link menu-list__link">О нас</a>
-               </li>
-               <li class="header-top__item menu-list__item">
-                  <a href="#" class="header-top__link menu-list__link">Оплата</a>
-               </li>
-               <li class="header-top__item menu-list__item">
-                  <a href="#" class="header-top__link menu-list__link">Оптовым клиентам</a>
-               </li>
-               <li class="header-top__item menu-list__item">
-                  <a href="#" class="header-top__link menu-list__link">Программа лояльности</a>
-               </li>
-               <li class="header-top__item menu-list__item">
-                  <a href="#" class="header-top__link menu-list__link">Партнерам</a>
-               </li>
-               <li class="header-top__item menu-list__item">
-                  <a href="#" class="header-top__link menu-list__link">Бонусы</a>
-               </li>
-            </ul>
-         </nav>
-         <button class="burger header-top__burger for-mobile" aria-label="Открыть меню">
-            <span class="burger__line" aria-hidden="true"></span>
-         </button>
-      </div>
-      <div class="header-main header-component">
-         <div class="header-main__about">
-            <h1 class="header-main__title visually-hidden">
-               «Читать весело» один из самых больших книжных магазинов Москвы и России.
-            </h1>
-            <a href="index.html" class="header-main__logo logo">
-               <img src="./img/sprite.svg#logo" style="width: 220px; height: 110px;" alt="Логотип «Читать весело»"
-                  class="header-main__logo-img logo-img">
-            </a>
-            <div class="header-main__contact main-contact">
-               <a aria-label="Телефон" href="tel:88004448444" class="header-main__contact-phone main-contact__phone">8 (800) 444-8-444</a>
-               <p class="header-main__contact-description main-contact__description">На связи круглосуточно</p>
-            </div>
-         </div>
-         <form action="#" method="get" class="search-form header-main__search-form">
-            <label id="search-form__label" class="visually-hidden">Поиск</label>
-            <input type="search" aria-labelledby="search-form__label" class="header-main__search-input search-form__input" placeholder="Поиск">
-         </form>
-         <div class="header-main__actions">
-            <a href="#" class="header-main__action" aria-label="Войти/Выйти">
-               <svg aria-hidden="true" class="header-main__action-icon" fill="#333" width="40px" height="40px">
-                  <use xlink:href="./img/sprite.svg#user"></use>
-               </svg>
-            </a>
-            <a href="#" class="header-main__action" aria-label="Избранное">
-               <svg aria-hidden="true" class="header-main__action-icon" fill="#333" width="40px" height="40px">
-                  <use xlink:href="./img/sprite.svg#favorites"></use>
-               </svg>
-            </a>
-            <a href="cart.html" class="header-main__action to-cart" aria-label="Корзина">
-               <svg aria-hidden="true" class="header-main__action-icon" fill="#333" width="40px" height="40px">
-                  <use xlink:href="./img/sprite.svg#bag"></use>
-               </svg>
-               <span class="to-cart__quantity">3</span>
-            </a>
-         </div>
-      </div>
-   </div>
-</header>
+      @include('html-components/header.html')
       <div class="container breadcrumbs-outer">
          <ul class="breadcrumbs cart-breadcrumbs">
             <li class="breadcrumbs__item">
